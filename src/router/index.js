@@ -3,6 +3,9 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '@/views/HomeView.vue';
 import PokemonView from '@/views/PokemonView.vue';
 import PokemonDetailsView from '@/views/PokemonDetailsView.vue';
+import MovesView from '@/views/MovesView.vue';
+import TypesView from '@/views/TypesView.vue';
+import AbilitiesView from '@/views/AbilitiesView.vue';
 import AboutView from '@/views/AboutView.vue';
 
 const router = createRouter({
@@ -27,6 +30,21 @@ const router = createRouter({
       path: '/about',
       name: 'About',
       component: AboutView,
+    },
+    {
+      path: '/moves',
+      name: 'Moves',
+      component: MovesView,
+    },
+    {
+      path: '/types',
+      name: 'Types',
+      component: TypesView,
+    },
+    {
+      path: '/abilities',
+      name: 'Abilities',
+      component: AbilitiesView,
     },
   ],
 });
