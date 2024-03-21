@@ -3,7 +3,7 @@
     <div>
       <HeaderComponent />
       <main class="container mx-auto py-8">
-        <h1 class="text-3xl font-bold mb-8">Find your favorite Pokemon here</h1>
+        <h1 class="text-3xl font-bold mb-8 text-center">Find your favorite Pokemon here</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <PokemonCard v-for="pokemonName in pokemons" :key="pokemonName" :pokemon-name="pokemonName" />
         </div>
