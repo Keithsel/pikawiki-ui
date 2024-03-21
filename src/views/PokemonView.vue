@@ -24,6 +24,7 @@ import { ref, onMounted, computed } from 'vue';
 import HeaderComponent from '@/components/HeaderComponent.vue';
 import PokemonCard from '@/components/PokemonCard.vue';
 import pokemonNames from '@/utils/pokemons.json';
+import PokemonBoard from '@/components/PokemonBoard.vue';
 
 const pokemons = ref([]);
 const searchQuery = ref('');
