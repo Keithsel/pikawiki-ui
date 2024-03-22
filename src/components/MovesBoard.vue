@@ -21,23 +21,21 @@
         <tr v-for="move in paginatedMoves" :key="move.name">
           <td class="px-6 py-4 whitespace-nowrap">
             <router-link
-              :to="'/move/' + move.name"
-              class="text-sm text-blue-500 hover:text-blue-700"
+              :to="'/moves/' + move.name"
+              class="text-sm font-medium text-blue-500 hover:text-blue-700"
             >
-              {{ getMoveName(move.name) }}
+              {{ getMoveLiteralName(move.name) }}
             </router-link>
           </td>
           <td class="px-6 py-4 whitespace-nowrap">
-            <router-link
-              :to="'/types/' + move.type"
-              class="text-sm text-gray-500 hover:text-gray-700"
-            >
-              {{ move.type }}
-            </router-link>
+            <TypeButton :type="move.type" />
           </td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-            <img :src="getCategoryImage(move.category)" :alt="move.category" class="inline-block h-4 w-4 mr-2">
-            {{ move.category }}
+          <td class="px-6 py-4 whitespace-nowrap">
+            <img
+              :src="getCategoryImage(move.category)"
+              :alt="move.category"
+              class="h-6 w-6"
+            />
           </td>
           <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
             {{ formatValue(move.power) }}
@@ -46,9 +44,9 @@
             {{ formatValue(move.accuracy) }}
           </td>
           <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-            {{ formatValue(move.pp) }}
+            {{ move.pp }}
           </td>
-          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+          <td class="px-6 py-4 text-sm text-gray-500">
             {{ formatEffect(move.effect) }}
           </td>
         </tr>
@@ -59,6 +57,7 @@
 
 <script setup>
 import { ref, computed } from 'vue';
+import TypeButton from '@/components/TypeButton.vue';
 import movesLiteral from '@/utils/moves-literal.json';
 
 const props = defineProps({
@@ -81,18 +80,42 @@ const columns = [
 const sortKey = ref('name');
 const sortOrder = ref(1);
 
+const formatValue = (value) => {
+  return value !== null ? value : '-';
+};
+
+const formatEffect = (effect) => {
+  return effect || '-';
+};
+
+const getMoveLiteralName = (name) => {
+  return movesLiteral[name] || name;
+};
+
+const getCategoryImage = (category) => {
+  return new URL(`../assets/moves/move-${category}.png`, import.meta.url).href;
+};
+
 const sortedMoves = computed(() => {
-  return [...props.moves].sort((a, b) => {
-    const effectA = a.effect === 'Do nothing.' ? '' : a.effect;
-    const effectB = b.effect === 'Do nothing.' ? '' : b.effect;
-    if (sortKey.value === 'effect') {
-      if (effectA < effectB) return -1 * sortOrder.value;
-      if (effectA > effectB) return 1 * sortOrder.value;
+  return props.moves.sort((a, b) => {
+    const valueA = a[sortKey.value] === null ? '-' : a[sortKey.value];
+    const valueB = b[sortKey.value] === null ? '-' : b[sortKey.value];
+
+    if (valueA === '-' && valueB !== '-') return 1;
+    if (valueA !== '-' && valueB === '-') return -1;
+    if (valueA === '-' && valueB === '-') return 0;
+
+    if (sortKey.value === 'name') {
+      return getMoveLiteralName(a.name).localeCompare(getMoveLiteralName(b.name)) * sortOrder.value;
+    } else if (sortKey.value === 'effect') {
+      return formatEffect(a.effect).localeCompare(formatEffect(b.effect)) * sortOrder.value;
+    } else if (sortKey.value === 'category') {
+      return a.category.localeCompare(b.category) * sortOrder.value;
     } else {
-      if (a[sortKey.value] < b[sortKey.value]) return -1 * sortOrder.value;
-      if (a[sortKey.value] > b[sortKey.value]) return 1 * sortOrder.value;
+      if (valueA < valueB) return -1 * sortOrder.value;
+      if (valueA > valueB) return 1 * sortOrder.value;
+      return 0;
     }
-    return 0;
   });
 });
 
@@ -107,21 +130,5 @@ const sortBy = (key) => {
     sortKey.value = key;
     sortOrder.value = 1;
   }
-};
-
-const getMoveName = (name) => {
-  return movesLiteral[name] || name;
-};
-
-const getCategoryImage = (category) => {
-  return new URL(`../assets/moves/move-${category}.png`, import.meta.url).href;
-};
-
-const formatValue = (value) => {
-  return value !== null ? value : '-';
-};
-
-const formatEffect = (effect) => {
-  return effect === 'Does nothing.' ? '-' : effect;
 };
 </script>

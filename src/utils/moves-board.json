@@ -1545,7 +1545,7 @@
         "power": 80,
         "accuracy": 100,
         "pp": 10,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "steel-beam",
@@ -2328,16 +2328,16 @@
         "power": 80,
         "accuracy": 100,
         "pp": 10,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "snowscape",
         "type": "ice",
         "category": "status",
-        "power": 0,
+        "power": null,
         "accuracy": null,
         "pp": 10,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "trailblaze",
@@ -2346,16 +2346,16 @@
         "power": 50,
         "accuracy": 100,
         "pp": 20,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "dragon-cheer",
         "type": "dragon",
         "category": "status",
-        "power": 0,
-        "accuracy": 0,
+        "power": null,
+        "accuracy": null,
         "pp": 15,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "alluring-voice",
@@ -2364,7 +2364,7 @@
         "power": 80,
         "accuracy": 100,
         "pp": 10,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "thunder-shock",
@@ -2508,7 +2508,7 @@
         "power": 100,
         "accuracy": 95,
         "pp": 15,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "ember",
@@ -2670,7 +2670,7 @@
         "power": 75,
         "accuracy": 100,
         "pp": 10,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "gust",
@@ -2823,7 +2823,7 @@
         "power": 80,
         "accuracy": 100,
         "pp": 15,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "tail-whip",
@@ -3048,7 +3048,7 @@
         "power": null,
         "accuracy": null,
         "pp": 10,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "terrain-pulse",
@@ -3075,7 +3075,7 @@
         "power": 120,
         "accuracy": 100,
         "pp": 10,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "chilling-water",
@@ -3084,7 +3084,7 @@
         "power": 50,
         "accuracy": 100,
         "pp": 20,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "double-kick",
@@ -3246,7 +3246,7 @@
         "power": 65,
         "accuracy": 100,
         "pp": 15,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "absorb",
@@ -3444,7 +3444,7 @@
         "power": 50,
         "accuracy": 100,
         "pp": 20,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "bind",
@@ -4038,7 +4038,7 @@
         "power": 100,
         "accuracy": 100,
         "pp": 5,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "pay-day",
@@ -4155,7 +4155,7 @@
         "power": 75,
         "accuracy": 100,
         "pp": 10,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "flatter",
@@ -4278,10 +4278,10 @@
         "name": "tidy-up",
         "type": "normal",
         "category": "status",
-        "power": 0,
+        "power": null,
         "accuracy": null,
         "pp": 10,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "leaf-blade",
@@ -4344,7 +4344,7 @@
         "power": 70,
         "accuracy": 100,
         "pp": 20,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "healing-wish",
@@ -4542,7 +4542,7 @@
         "power": 120,
         "accuracy": 100,
         "pp": 10,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "splash",
@@ -4551,7 +4551,7 @@
         "power": null,
         "accuracy": null,
         "pp": 40,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "horn-attack",
@@ -4587,7 +4587,7 @@
         "power": 1,
         "accuracy": 100,
         "pp": 10,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "double-hit",
@@ -4782,10 +4782,10 @@
         "name": "hard-press",
         "type": "steel",
         "category": "physical",
-        "power": 0,
+        "power": null,
         "accuracy": 100,
         "pp": 10,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "egg-bomb",
@@ -5079,10 +5079,10 @@
         "name": "shed-tail",
         "type": "normal",
         "category": "status",
-        "power": 0,
+        "power": null,
         "accuracy": null,
         "pp": 10,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "constrict",
@@ -5154,7 +5154,7 @@
         "power": 120,
         "accuracy": 100,
         "pp": 5,
-        "effect": "Does nothing."
+        "effect": null
     },
     {
         "name": "rage-powder",

@@ -44,13 +44,8 @@
             </router-link>
           </td>
           <td class="px-6 py-4 whitespace-nowrap">
-            <div v-for="type in pokemon.types" :key="type">
-              <router-link
-                :to="'/types/' + type"
-                class="text-sm text-gray-500 hover:text-gray-700"
-              >
-                {{ type }}
-              </router-link>
+            <div class="space-y-1">
+              <TypeButton v-for="type in pokemon.types" :key="type" :type="type" />
             </div>
           </td>
           <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
@@ -83,6 +78,7 @@
 <script setup>
 import { ref, computed } from 'vue';
 import pokemonNames from '@/utils/pokemons.json';
+import TypeButton from '@/components/TypeButton.vue';
 
 const props = defineProps({
   pokemons: {
