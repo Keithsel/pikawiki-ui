@@ -1,6 +1,6 @@
 <!-- src/components/HeaderComponent.vue -->
 <template>
-  <header class="bg-white shadow" @mouseleave="handleHeaderMouseLeave">
+  <header class="bg-white shadow relative z-10" @mouseleave="handleHeaderMouseLeave">
     <nav class="container mx-auto px-6 py-3">
       <div class="flex items-center justify-between">
         <div class="flex items-center">
