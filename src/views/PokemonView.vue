@@ -3,11 +3,14 @@
   <div>
     <HeaderComponent />
     <div class="container mx-auto px-6 py-8">
-      <h1 class="text-3xl font-bold mb-4 text-center">Pokemon</h1>
-      <div class="mb-4 flex flex-col items-center">
-        <div class="text-left inline-block">
-          <span>Have a look at your favorite Pokemon along with their main stats.</span><br>
-          <span class="text-center">The table is sortable by clicking a column header, and searchable by using the controls above it.</span>
+      <h1 class="text-3xl font-bold mb-4 text-center">Pokemon List</h1>
+      <div class="flex justify-center mb-8">
+        <div class="w-3/5 bg-white p-6 rounded-lg shadow-md">
+          <p class="text-left">
+            This is a full list of Pokemon in the database. The base total, HP, attack, defense, special attack, special defense, and speed are listed along with any additional information.
+            <br><br>
+            Click a Pokemon name to see even more detailed information, including its types. You can click a column heading to instantly sort by that column, or filter on Pokemon name and type using the options provided.
+          </p>
         </div>
       </div>
       <div class="mb-4 flex justify-center">
@@ -29,7 +32,11 @@
           </select>
         </div>
       </div>
-      <PokemonBoard :pokemons="filteredPokemons" />
+      <div class="flex justify-center">
+        <div class="w-4/5">
+          <PokemonBoard :pokemons="filteredPokemons" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
