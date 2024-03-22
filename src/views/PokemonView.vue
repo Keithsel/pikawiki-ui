@@ -2,40 +2,57 @@
 <template>
   <div>
     <HeaderComponent />
-    <main class="container mx-auto py-8">
-      <h1 class="text-3xl font-bold mb-8">Find your favorite Pokemon here</h1>
-      <div class="mb-8">
+    <div class="container mx-auto px-6 py-8">
+      <h1 class="text-3xl font-bold mb-4 text-center">Pokemon</h1>
+      <div class="mb-4 flex flex-col items-center">
+        <div class="text-left inline-block">
+          <span>Have a look at your favorite Pokemon along with their main stats.</span><br>
+          <span class="text-center">The table is sortable by clicking a column header, and searchable by using the controls above it.</span>
+        </div>
+      </div>
+      <div class="mb-4 flex justify-center">
         <input
-          v-model="searchQuery"
           type="text"
-          placeholder="Search Pokemon..."
-          class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-        >
+          v-model="searchQuery"
+          placeholder="Search by name..."
+          class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <div class="relative inline-block ml-4">
+          <select
+            v-model="selectedType"
+            class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            <option value="">All types</option>
+            <option v-for="type in types" :key="type" :value="type">
+              {{ type }}
+            </option>
+          </select>
+        </div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <PokemonCard v-for="pokemonName in filteredPokemons" :key="pokemonName" :pokemon-name="pokemonName" />
-      </div>
-    </main>
+      <PokemonBoard :pokemons="filteredPokemons" />
+    </div>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted, computed } from 'vue';
+import { ref, computed } from 'vue';
 import HeaderComponent from '@/components/HeaderComponent.vue';
-import PokemonCard from '@/components/PokemonCard.vue';
-import pokemonNames from '@/utils/pokemons.json';
 import PokemonBoard from '@/components/PokemonBoard.vue';
+import pokemonData from '@/utils/pokemon-board.json';
+import types from '@/utils/types.json';
 
-const pokemons = ref([]);
 const searchQuery = ref('');
-
-onMounted(() => {
-  pokemons.value = pokemonNames;
-});
+const selectedType = ref('');
 
 const filteredPokemons = computed(() => {
-  return pokemons.value.filter(pokemonName =>
-    pokemonName.toLowerCase().includes(searchQuery.value.toLowerCase())
-  );
+  return pokemonData.filter((pokemon) => {
+    const nameMatch = pokemon.name
+      .toLowerCase()
+      .includes(searchQuery.value.toLowerCase());
+    const typeMatch =
+      selectedType.value === '' ||
+      pokemon.types.includes(selectedType.value);
+    return nameMatch && typeMatch;
+  });
 });
 </script>
