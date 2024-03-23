@@ -1,0 +1,20 @@
+{
+    "normal": "nor",
+    "fire": "fir",
+    "water": "wat",
+    "electric": "ele",
+    "grass": "gra",
+    "ice": "ice",
+    "fighting": "fig",
+    "poison": "poi",
+    "ground": "gro",
+    "flying": "fly",
+    "psychic": "psy",
+    "bug": "bug",
+    "rock": "roc",
+    "ghost": "gho",
+    "dragon": "dra",
+    "dark": "dar",
+    "steel": "ste",
+    "fairy": "fai"
+}

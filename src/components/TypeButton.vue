@@ -1,3 +1,4 @@
+<!-- src/components/TypeButton.vue -->
 <template>
   <router-link
     :to="'/type/' + type"
