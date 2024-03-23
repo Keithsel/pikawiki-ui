@@ -30,9 +30,9 @@
               >
                 <div class="py-1">
                   <router-link to="/pokemon" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pokemon</router-link>
-                  <router-link to="/moves" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Moves</router-link>
-                  <router-link to="/types" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Types</router-link>
-                  <router-link to="/abilities" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Abilities</router-link>
+                  <router-link to="/move" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Moves</router-link>
+                  <router-link to="/type" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Types</router-link>
+                  <router-link to="/ability" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Abilities</router-link>
                 </div>
               </div>
             </div>

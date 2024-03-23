@@ -32,17 +32,17 @@ const router = createRouter({
       component: AboutView,
     },
     {
-      path: '/moves',
+      path: '/move',
       name: 'Moves',
       component: MovesView,
     },
     {
-      path: '/types',
+      path: '/type',
       name: 'Types',
       component: TypesView,
     },
     {
-      path: '/abilities',
+      path: '/ability',
       name: 'Abilities',
       component: AbilitiesView,
     },

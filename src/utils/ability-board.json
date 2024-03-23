@@ -1,0 +1,457 @@
+[
+    {
+        "name": "adaptability",
+        "count": 2,
+        "description": "Increases the same-type attack bonus from 1.5× to 2×."
+    },
+    {
+        "name": "air-lock",
+        "count": 1,
+        "description": "Negates all effects of weather, but does not prevent the weather itself."
+    },
+    {
+        "name": "analytic",
+        "count": 1,
+        "description": "Strengthens moves to 1.3× their power when moving last."
+    },
+    {
+        "name": "anticipation",
+        "count": 1,
+        "description": "Notifies all trainers upon entering battle if an opponent has a super-effective move, self destruct, explosion, or a one-hit KO move."
+    },
+    {
+        "name": "bad-dreams",
+        "count": 1,
+        "description": "Damages sleeping opponents for 1/8 their max HP after each turn."
+    },
+    {
+        "name": "battle-armor",
+        "count": 1,
+        "description": "Protects against critical hits."
+    },
+    {
+        "name": "blaze",
+        "count": 7,
+        "description": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
+    },
+    {
+        "name": "clear-body",
+        "count": 1,
+        "description": "Prevents stats from being lowered by other Pokémon."
+    },
+    {
+        "name": "cloud-nine",
+        "count": 2,
+        "description": "Negates all effects of weather, but does not prevent the weather itself."
+    },
+    {
+        "name": "competitive",
+        "count": 4,
+        "description": "Raises Special Attack by two stages upon having any stat lowered."
+    },
+    {
+        "name": "contrary",
+        "count": 1,
+        "description": "Inverts stat changes."
+    },
+    {
+        "name": "cursed-body",
+        "count": 2,
+        "description": "Has a 30% chance of Disabling any move that hits the Pokémon."
+    },
+    {
+        "name": "cute-charm",
+        "count": 3,
+        "description": "Has a 30% chance of infatuating attacking Pokémon on contact."
+    },
+    {
+        "name": "damp",
+        "count": 3,
+        "description": "Prevents self destruct, explosion, and aftermath from working while the Pokémon is in battle."
+    },
+    {
+        "name": "download",
+        "count": 1,
+        "description": "Raises the attack stat corresponding to the opponents' weaker defense one stage upon entering battle."
+    },
+    {
+        "name": "drought",
+        "count": 2,
+        "description": "Summons strong sunlight that lasts indefinitely upon entering battle."
+    },
+    {
+        "name": "early-bird",
+        "count": 1,
+        "description": "Makes sleep pass twice as quickly."
+    },
+    {
+        "name": "effect-spore",
+        "count": 1,
+        "description": "Has a 30% chance of inflcting either paralysis, poison, or sleep on attacking Pokémon on contact."
+    },
+    {
+        "name": "flash-fire",
+        "count": 9,
+        "description": "Protects against fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
+    },
+    {
+        "name": "flame-body",
+        "count": 2,
+        "description": "Has a 30% chance of burning attacking Pokémon on contact."
+    },
+    {
+        "name": "frisk",
+        "count": 1,
+        "description": "Reveals an opponent's held item upon entering battle."
+    },
+    {
+        "name": "friend-guard",
+        "count": 1,
+        "description": "Decreases all direct damage taken by friendly Pokémon to 0.75×."
+    },
+    {
+        "name": "gluttony",
+        "count": 2,
+        "description": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP."
+    },
+    {
+        "name": "guts",
+        "count": 3,
+        "description": "Increases Attack to 1.5× with a major status ailment."
+    },
+    {
+        "name": "heavy-metal",
+        "count": 1,
+        "description": "Doubles the Pokémon's weight."
+    },
+    {
+        "name": "hydration",
+        "count": 2,
+        "description": "Cures any major status ailment after each turn during rain."
+    },
+    {
+        "name": "hyper-cutter",
+        "count": 2,
+        "description": "Prevents Attack from being lowered by other Pokémon."
+    },
+    {
+        "name": "ice-body",
+        "count": 1,
+        "description": "Heals for 1/16 max HP after each turn during hail.  Protects against hail damage."
+    },
+    {
+        "name": "illusion",
+        "count": 1,
+        "description": "Takes the appearance of the last conscious party Pokémon upon being sent out until hit by a damaging move."
+    },
+    {
+        "name": "imposter",
+        "count": 1,
+        "description": "Transforms upon entering battle."
+    },
+    {
+        "name": "infiltrator",
+        "count": 3,
+        "description": "Bypasses light screen, reflect, and safeguard."
+    },
+    {
+        "name": "inner-focus",
+        "count": 6,
+        "description": "Prevents flinching."
+    },
+    {
+        "name": "intimidate",
+        "count": 8,
+        "description": "Lowers opponents' Attack one stage upon entering battle."
+    },
+    {
+        "name": "iron-fist",
+        "count": 1,
+        "description": "Strengthens punch-based moves to 1.2× their power."
+    },
+    {
+        "name": "justified",
+        "count": 5,
+        "description": "Raises Attack one stage upon taking damage from a dark move."
+    },
+    {
+        "name": "keen-eye",
+        "count": 3,
+        "description": "Prevents accuracy from being lowered."
+    },
+    {
+        "name": "leaf-guard",
+        "count": 1,
+        "description": "Protects against major status ailments during strong sunlight."
+    },
+    {
+        "name": "levitate",
+        "count": 3,
+        "description": "Evades ground moves."
+    },
+    {
+        "name": "light-metal",
+        "count": 2,
+        "description": "Halves the Pokémon's weight."
+    },
+    {
+        "name": "lightning-rod",
+        "count": 3,
+        "description": "Redirects single-target electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage."
+    },
+    {
+        "name": "limber",
+        "count": 1,
+        "description": "Prevents paralysis."
+    },
+    {
+        "name": "magic-bounce",
+        "count": 1,
+        "description": "Reflects most non-damaging moves back at their user."
+    },
+    {
+        "name": "magic-guard",
+        "count": 1,
+        "description": "Protects against damage not directly caused by a move."
+    },
+    {
+        "name": "marvel-scale",
+        "count": 2,
+        "description": "Increases Defense to 1.5× with a major status ailment."
+    },
+    {
+        "name": "moxie",
+        "count": 3,
+        "description": "Raises Attack one stage upon KOing a Pokémon."
+    },
+    {
+        "name": "multiscale",
+        "count": 2,
+        "description": "Halves damage taken from full HP."
+    },
+    {
+        "name": "natural-cure",
+        "count": 1,
+        "description": "Cures any major status ailment upon switching out."
+    },
+    {
+        "name": "overgrow",
+        "count": 7,
+        "description": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
+    },
+    {
+        "name": "own-tempo",
+        "count": 1,
+        "description": "Prevents confusion."
+    },
+    {
+        "name": "pixilate",
+        "count": 1,
+        "description": "Turns the bearer's normal moves into fairy moves and strengthens them to 1.3× their power."
+    },
+    {
+        "name": "pickpocket",
+        "count": 1,
+        "description": "Steals attacking Pokémon's held items on contact."
+    },
+    {
+        "name": "plus",
+        "count": 1,
+        "description": "Increases Special Attack to 1.5× when a friendly Pokémon has plus or minus."
+    },
+    {
+        "name": "poison-heal",
+        "count": 2,
+        "description": "Heals for 1/8 max HP after each turn when poisoned in place of damage."
+    },
+    {
+        "name": "poison-point",
+        "count": 1,
+        "description": "Has a 30% chance of poisoning attacking Pokémon on contact."
+    },
+    {
+        "name": "prankster",
+        "count": 2,
+        "description": "Raises non-damaging moves' priority by one stage."
+    },
+    {
+        "name": "pressure",
+        "count": 6,
+        "description": "Increases the PP cost of moves targetting the Pokémon by one."
+    },
+    {
+        "name": "protean",
+        "count": 1,
+        "description": "Changes the bearer's type to match each move it uses."
+    },
+    {
+        "name": "quick-feet",
+        "count": 1,
+        "description": "Increases Speed to 1.5× with a major status ailment."
+    },
+    {
+        "name": "rain-dish",
+        "count": 4,
+        "description": "Heals for 1/16 max HP after each turn during rain."
+    },
+    {
+        "name": "rattled",
+        "count": 1,
+        "description": "Raises Speed one stage upon being hit by a dark, ghost, or bug move."
+    },
+    {
+        "name": "reckless",
+        "count": 1,
+        "description": "Strengthens recoil moves to 1.2× their power."
+    },
+    {
+        "name": "rock-head",
+        "count": 2,
+        "description": "Protects against recoil damage."
+    },
+    {
+        "name": "rough-skin",
+        "count": 1,
+        "description": "Damages attacking Pokémon for 1/8 their max HP on contact."
+    },
+    {
+        "name": "run-away",
+        "count": 4,
+        "description": "Ensures success fleeing from wild battles."
+    },
+    {
+        "name": "sand-rush",
+        "count": 2,
+        "description": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
+    },
+    {
+        "name": "sand-stream",
+        "count": 1,
+        "description": "Summons a sandstorm that lasts indefinitely upon entering battle."
+    },
+    {
+        "name": "sand-veil",
+        "count": 4,
+        "description": "Increases evasion to 1.25× during a sandstorm.  Protects against sandstorm damage."
+    },
+    {
+        "name": "serene-grace",
+        "count": 2,
+        "description": "Doubles the chance of moves' extra effects occurring."
+    },
+    {
+        "name": "sheer-force",
+        "count": 4,
+        "description": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
+    },
+    {
+        "name": "shell-armor",
+        "count": 3,
+        "description": "Protects against critical hits."
+    },
+    {
+        "name": "shed-skin",
+        "count": 1,
+        "description": "Has a 33% chance of curing any major status ailment after each turn."
+    },
+    {
+        "name": "snow-cloak",
+        "count": 3,
+        "description": "Increases evasion to 1.25× during hail.  Protects against hail damage."
+    },
+    {
+        "name": "solar-power",
+        "count": 2,
+        "description": "Increases Special Attack to 1.5× but costs 1/8 max HP after each turn during strong sunlight."
+    },
+    {
+        "name": "speed-boost",
+        "count": 1,
+        "description": "Raises Speed one stage after each turn."
+    },
+    {
+        "name": "stall",
+        "count": 1,
+        "description": "Makes the Pokémon move last within its move's priority bracket."
+    },
+    {
+        "name": "steadfast",
+        "count": 3,
+        "description": "Raises Speed one stage upon flinching."
+    },
+    {
+        "name": "static",
+        "count": 3,
+        "description": "Has a 30% chance of paralyzing attacking Pokémon on contact."
+    },
+    {
+        "name": "sturdy",
+        "count": 3,
+        "description": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
+    },
+    {
+        "name": "super-luck",
+        "count": 2,
+        "description": "Raises moves' critical hit rates one stage."
+    },
+    {
+        "name": "swift-swim",
+        "count": 2,
+        "description": "Doubles Speed during rain."
+    },
+    {
+        "name": "synchronize",
+        "count": 5,
+        "description": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
+    },
+    {
+        "name": "technician",
+        "count": 3,
+        "description": "Strengthens moves of 60 base power or less to 1.5× their power."
+    },
+    {
+        "name": "telepathy",
+        "count": 1,
+        "description": "Protects against friendly Pokémon's damaging moves."
+    },
+    {
+        "name": "thick-fat",
+        "count": 1,
+        "description": "Halves damage from fire and ice moves."
+    },
+    {
+        "name": "torrent",
+        "count": 10,
+        "description": "Strengthens water moves to inflict 1.5× damage at 1/3 max HP or less."
+    },
+    {
+        "name": "trace",
+        "count": 1,
+        "description": "Copies an opponent's ability upon entering battle."
+    },
+    {
+        "name": "unburden",
+        "count": 3,
+        "description": "Doubles Speed upon using or losing a held item."
+    },
+    {
+        "name": "unnerve",
+        "count": 3,
+        "description": "Prevents opposing Pokémon from eating held Berries."
+    },
+    {
+        "name": "volt-absorb",
+        "count": 1,
+        "description": "Absorbs electric moves, healing for 1/4 max HP."
+    },
+    {
+        "name": "water-absorb",
+        "count": 2,
+        "description": "Absorbs water moves, healing for 1/4 max HP."
+    },
+    {
+        "name": "weak-armor",
+        "count": 1,
+        "description": "Raises Speed and lowers Defense by one stage each upon being hit by a physical move."
+    }
+]

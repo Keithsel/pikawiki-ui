@@ -1,6 +1,6 @@
 <template>
   <router-link
-    :to="'/types/' + type"
+    :to="'/type/' + type"
     class="block px-2 py-1 rounded text-xs font-semibold text-white w-16 flex items-center justify-center border border-black relative overflow-hidden"
     :class="{ 'brightness-110': isHovered }"
     :style="{ backgroundColor: getTypeColor(type) }"

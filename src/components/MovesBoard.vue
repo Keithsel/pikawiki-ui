@@ -21,7 +21,7 @@
         <tr v-for="move in paginatedMoves" :key="move.name">
           <td class="px-6 py-4 whitespace-nowrap">
             <router-link
-              :to="'/moves/' + move.name"
+              :to="'/move/' + move.name"
               class="text-sm font-medium text-blue-500 hover:text-blue-700"
             >
               {{ getMoveLiteralName(move.name) }}
